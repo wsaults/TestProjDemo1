@@ -15,9 +15,38 @@
 
 default_platform(:ios)
 
+def build_app
+  project_file = 'TestProjDemo1.xcodeproj'
+  increment_build_number(xcodeproj: project_file) # version bump
+
+  gym(
+    workspace: 'TestProjDemo1.xcworkspace',
+    scheme: 'TestProjDemo1'
+  )
+
+  commit_version_bump(
+    message: 'Version Bump by fastlane',
+    xcodeproj: project_file,
+    force: true
+  )
+
+  push_to_git_remote
+end
+
+
 platform :ios do
   desc "Description of what the lane does"
   lane :custom_lane do
     # add actions here: https://docs.fastlane.tools/actions
+  end
+
+  lane :release do
+    build_app
+    deliver(
+      force: true,
+      skip_metadata: true,
+      precheck_include_in_app_purchases: false,
+      run_precheck_before_submit: false
+    )
   end
 end

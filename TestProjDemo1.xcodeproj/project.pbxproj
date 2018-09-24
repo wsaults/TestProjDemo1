@@ -16,6 +16,7 @@
 		9342C7492156F46400CB4EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9342C7472156F46400CB4EAD /* LaunchScreen.storyboard */; };
 		9342C7542156F46500CB4EAD /* TestProjDemo1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342C7532156F46500CB4EAD /* TestProjDemo1Tests.swift */; };
 		9342C75F2156F46500CB4EAD /* TestProjDemo1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342C75E2156F46500CB4EAD /* TestProjDemo1UITests.swift */; };
+		9371151321586F2700B15E8B /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371151221586F2700B15E8B /* ViewControllerSpec.swift */; };
 		C28697BA088624489586C972 /* Pods_TestProjDemo1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6666B91F8518BD8D3A7AC803 /* Pods_TestProjDemo1Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9371151A21586FA300B15E8B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		036C1CAADA18EFC901C84B72 /* Pods-TestProjDemo1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjDemo1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestProjDemo1Tests/Pods-TestProjDemo1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		16B9CBEF2D5FAF30A6CD2C2C /* Pods-TestProjDemo1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjDemo1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProjDemo1Tests/Pods-TestProjDemo1Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +68,11 @@
 		9342C75A2156F46500CB4EAD /* TestProjDemo1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjDemo1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9342C75E2156F46500CB4EAD /* TestProjDemo1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjDemo1UITests.swift; sourceTree = "<group>"; };
 		9342C7602156F46500CB4EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9371151221586F2700B15E8B /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
+		9371151421586F5A00B15E8B /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9371151621586F5E00B15E8B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9371151B21586FD300B15E8B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9371151D21586FD600B15E8B /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		984E9CB9E1ED11A9A48AD9A8 /* Pods_TestProjDemo1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProjDemo1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD91D401A813BFC7999E7AE4 /* Pods_TestProjDemo1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProjDemo1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF9EDBB2C87F17606F9C3A7 /* Pods-TestProjDemo1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjDemo1UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProjDemo1UITests/Pods-TestProjDemo1UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +160,7 @@
 			children = (
 				9342C7532156F46500CB4EAD /* TestProjDemo1Tests.swift */,
 				9342C7552156F46500CB4EAD /* Info.plist */,
+				9371151221586F2700B15E8B /* ViewControllerSpec.swift */,
 			);
 			path = TestProjDemo1Tests;
 			sourceTree = "<group>";
@@ -158,6 +177,10 @@
 		C204CD4BF5768AC25D827B29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9371151D21586FD600B15E8B /* Quick.framework */,
+				9371151B21586FD300B15E8B /* Nimble.framework */,
+				9371151621586F5E00B15E8B /* Nimble.framework */,
+				9371151421586F5A00B15E8B /* Quick.framework */,
 				984E9CB9E1ED11A9A48AD9A8 /* Pods_TestProjDemo1.framework */,
 				6666B91F8518BD8D3A7AC803 /* Pods_TestProjDemo1Tests.framework */,
 				CD91D401A813BFC7999E7AE4 /* Pods_TestProjDemo1UITests.framework */,
@@ -195,6 +218,7 @@
 				9342C74C2156F46500CB4EAD /* Frameworks */,
 				9342C74D2156F46500CB4EAD /* Resources */,
 				5B63C6A344FECE595CC1012E /* [CP] Embed Pods Frameworks */,
+				9371151A21586FA300B15E8B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -408,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9342C7542156F46500CB4EAD /* TestProjDemo1Tests.swift in Sources */,
+				9371151321586F2700B15E8B /* ViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
